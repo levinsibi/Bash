@@ -1,0 +1,23 @@
+jenkins
+admin,Welcome@1
+testautomationlevin@gmail.com,Welcome@1
+
+
+
+//Docker
+https://www.softwaretestinghelp.com/docker-selenium-tutorial/
+
+docker run -d -p 4446:4444 --name selenium-hub -P selenium/hub:2.53.1
+
+Enable Vitualization if unable to configure VM -(in BIOS settings)
+
+
+working combo
+
+docker run -d -p 4444:4444 -–name selenium-hub selenium/hub:2.53.1
+docker run -d –P -–link selenium-hub:hub selenium/node-chrome-debug:2.53.1
+docker run -d –P -–link selenium-hub:hub selenium/node-firefox-debug:2.53.1
+docker run -d -–link selenium-hub:hub selenium/node-chrome:2.53.1
+
+
+"C:\Program Files\Docker Toolbox\docker-machine" env <default> --shell=[cmd|powershell]
